@@ -44,3 +44,16 @@ Given a set of agents $N = \{1,2,\dots,n\}$ a finite set of outcomes (or alterna
 If there is a candidate or outcome that is preffered to every other candidate in pariwise majority-rule comparisons, that candidate should be chosen.
 * There is not always a Condorcet winner
 * sometimes, there is a cycle where A defeats B, B defeats C, and C defeats A, known as a Condorcet Cycle
+
+
+
+## Impossiblity of Non-Paradocial Social Welfare Functions
+Let $W$ be a *social welfare function*.
+
+**Note** Think of the *social welfare function* as an aggregate over all preferences of individual agents. It gets a list of rankings and returns a single ranking. 
+- **Pareto Efficiency**: $W$ is *Pareto efficient* if whenever all agents agree on the ordering of two outcomes, the social welfare function selects that ordering. 
+- **Independence of Irrelevant Alternatives**: $W$ is *independent of irrelevant alternatives* if the selected ordering between outcomes depends only on the relative orderings they are given by the agents.
+- **Dictatorship**: $W$ has a *dictator* if there exists a single agent whose perferences always determine the social ordering. (This means that only the ranking of a single Agent determines the outcome of $W$. The rankings of all other agents do not influence the result.)
+- **Arrow's Theroem**: Any social welfare function $W$ over three or more outcomes that is Pareto efficient and independent of irrelevant alternatives is ditatorial. 
+
+Why can't we redefine the *Pareto Efficieny* as when most people agree. In that case having a *dictator* would not fullfill the *Pateto Efficiency* in all cases. 
